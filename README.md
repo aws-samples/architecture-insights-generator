@@ -2,7 +2,7 @@
 <img src="/ChimeraUI.png" alt="ChimeraUI" width="300">
 Architecture Insights Generator is a program designed to streamline the process of analyzing AWS Trusted Adviser (TA) reports and registering identified risks into a Well-Architected (WA) workload created through a specified Custom Lens. 
 
-## Key features of WA_Chimera:
+## Key features:
 
 1. Local deployment: Runs directly on a Mac, easy and convenient
 2. Not limited to whether there is enterprise support service, just use the TA report export from AWS Trusted Adviser console.
