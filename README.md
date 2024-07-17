@@ -32,7 +32,7 @@ If you encounter any issues, please report them in the "Issues" section of this 
 
 ## Supported Custom Lens
 
-When lens.json changes, it needs to be processed by the pjson.py program to generate a new output.csv file. Whether to automatically trigger the update of lens.json based on the updates of gcr-war-key-workload-custom-lens is still under consideration. If necessary, this feature will be supported in future versions.
+When lens.json changes, it needs to be processed by the pjson.py program to generate a new output.csv file.
 
 ## Security
 
