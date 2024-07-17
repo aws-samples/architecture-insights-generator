@@ -31,4 +31,4 @@ with open('output.csv', 'w', newline='') as csvfile:
                         if match.startswith("Details:"):
                             break
                         if match.strip() != '':
-                            writer.writerow([pillar_name, question_title, choice_title, match.strip(), question_ID, choice_ID])
+                            writer.writerow([pillar_name, question_title, choice_title, match.strip().lstrip("*").strip(), question_ID, choice_ID])
