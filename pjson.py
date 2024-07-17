@@ -24,7 +24,8 @@ with open('output.csv', 'w', newline='') as csvfile:
                 choice_ID = choice['id']
                 helpful_resource = choice['helpfulResource']['displayText']
                 if 'Trusted Advisor Checks:' in helpful_resource:
-                    matches = re.findall(pattern, helpful_resource)
+                    #matches = re.findall(pattern, helpful_resource)
+                    matches = helpful_resource.split('\n')
                     for match in matches:
                         if match.startswith("Trusted Advisor Checks:"):
                             continue
