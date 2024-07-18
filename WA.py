@@ -432,7 +432,7 @@ def update_workload_with_TA():
         return
 
 
-    wellarchitected_client = boto3.client('wellarchitected')
+    wellarchitected_client = boto3.client('wellarchitected', region_name=region_id)
     """
         SELECT a.check_index, b.[Question ID], b.[Choice ID], b.[Pillar Name], b.[Question Title], b.[Choice Title], b.[Trusted Advisor Checks], a.description
         FROM TA_all a, lens b
