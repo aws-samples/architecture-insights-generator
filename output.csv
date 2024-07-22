@@ -3,8 +3,9 @@ Security,SEC 1 How do you securely operate your workload?,P0 Secure account root
 Security,SEC 1 How do you securely operate your workload?,P0 Secure account root user and properties,IAM Password Policy Yw2K9puPzl,pillar_1_q01,pillar_1_q01choice2
 Security,SEC 2 How do you manage identities for people and machines?,"P0 Use strong sign-in mechanisms - Enforce MFA for root account , power user accounts",MFA on Root Account 7DAFEmoDos,pillar_1_q02,pillar_1_q02choice1
 Security,SEC 2 How do you manage identities for people and machines?,"P0 Use strong sign-in mechanisms - Enforce MFA for root account , power user accounts",Password policies for IAM users should have strong configurations,pillar_1_q02,pillar_1_q02choice1
-Security,SEC 2 How do you manage identities for people and machines?,"P0 Use strong sign-in mechanisms - Enforce MFA for root account , power user accounts",Hardware MFA should be enabled for the root user (Suggested but not mandatory),pillar_1_q02,pillar_1_q02choice1
 Security,SEC 2 How do you manage identities for people and machines?,"P0 Use strong sign-in mechanisms - Enforce MFA for root account , power user accounts",MFA should be enabled for all IAM users that have a console password,pillar_1_q02,pillar_1_q02choice1
+Security,SEC 2 How do you manage identities for people and machines?,"P0 Use strong sign-in mechanisms - Enforce MFA for root account , power user accounts",= Suggested but not mandatory,pillar_1_q02,pillar_1_q02choice1
+Security,SEC 2 How do you manage identities for people and machines?,"P0 Use strong sign-in mechanisms - Enforce MFA for root account , power user accounts",Hardware MFA should be enabled for the root user,pillar_1_q02,pillar_1_q02choice1
 Security,SEC 2 How do you manage identities for people and machines?,P1 Use strong sign-in mechanisms - Enforce strong password policy,IAM Password Policy Yw2K9puPzl,pillar_1_q02,pillar_1_q02choice2
 Security,SEC 2 How do you manage identities for people and machines?,P2 Use temporary credentials,CodeBuild project environment variables should not contain clear text credentials,pillar_1_q02,pillar_1_q02choice3
 Security,SEC 2 How do you manage identities for people and machines?,P0 Store and use secrets securely - i.e. never Exposed Access Keys in public Git Repo,IAM Access Key Rotation DqdJqYeRm5,pillar_1_q02,pillar_1_q02choice4
@@ -57,14 +58,15 @@ Security,SEC 4 How do you detect and investigate security events?,P1 Configure s
 Security,SEC 4 How do you detect and investigate security events?,P1 Configure service and application logging,Amazon Redshift clusters should have audit logging enabled,pillar_1_q04,pillar_1_q04choice1
 Security,SEC 4 How do you detect and investigate security events?,"P1 Analyze logs, findings, and metrics centrally",GuardDuty should be enabled,pillar_1_q04,pillar_1_q04choice2
 Security,SEC 5 How do you protect your network resources?,P1 Create network layers,The VPC default security group should not allow inbound and outbound traffic Hs4Ma3G118,pillar_1_q05,pillar_1_q05choice1
-Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,= Suggested but not mandatory,pillar_1_q05,pillar_1_q05choice2
-Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,VPC flow logging should be enabled in all VPCs,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Amazon Elasticsearch Service domains should be in a VPC,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,ECS services should not have public IP addresses assigned to them automatically Hs4Ma3G146,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Security Groups - Unrestricted Access 1iG5NDGVre,pillar_1_q05,pillar_1_q05choice2
-Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Security Groups - Specific Ports Unrestricted HCP4007jGY,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Amazon RDS Security Group Access Risk,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,ELB Security Groups xSqX82fQu,pillar_1_q05,pillar_1_q05choice2
+Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Secrets Manager secrets should be rotated within a specified number of days Hs4Ma3G112,pillar_1_q05,pillar_1_q05choice2
+Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,= Suggested but not mandatory,pillar_1_q05,pillar_1_q05choice2
+Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,VPC flow logging should be enabled in all VPCs,pillar_1_q05,pillar_1_q05choice2
+Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Security Groups - Specific Ports Unrestricted HCP4007jGY,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Amazon RDS Security Group Access Risk nNauJisYIT,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Classic Load Balancers with HTTPS/SSL listeners should use a predefined security policy that has strong configuration Hs4Ma3G205,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,CloudFront distributions should have WAF enabled Hs4Ma3G201,pillar_1_q05,pillar_1_q05choice2
@@ -75,7 +77,6 @@ Security,SEC 5 How do you protect your network resources?,P0 Control traffic at 
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,API Gateway should be associated with a WAF Web ACL Hs4Ma3G125,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,EC2 instances should not have a public IPv4 address Hs4Ma3G123,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,VPC flow logging should be enabled in all VPCs Hs4Ma3G122,pillar_1_q05,pillar_1_q05choice2
-Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Secrets Manager secrets should be rotated within a specified number of days Hs4Ma3G112,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P0 Control traffic at all layers - restrict public subnet access.,Redshift clusters should use enhanced VPC routing Hs4Ma3G104,pillar_1_q05,pillar_1_q05choice2
 Security,SEC 5 How do you protect your network resources?,P1 Control traffic at all layers - restrict private subnet access.,Security Groups - Specific Ports Unrestricted HCP4007jGY (Suggested but not mandatory),pillar_1_q05,pillar_1_q05choice3
 Security,SEC 6 How do you protect your compute resources?,P2 Perform vulnerability management,Amazon EC2 instances with Microsoft SQL Server end of support Qsdfp3A4L3,pillar_1_q06,pillar_1_q06choice1
@@ -144,8 +145,9 @@ Reliability,REL 2 How do you plan your network topology?,"P0 Provision redundant
 Reliability,REL 7 How do you design your workload to adapt to changes in demand?,P1 Use automation when obtaining or scaling resources,Auto Scaling Group Resources 8CNsSllI5v,pillar_3_q08,pillar_3_q08choice1
 Reliability,REL 7 How do you design your workload to adapt to changes in demand?,P1 Obtain resources upon detection of impairment to a workload,Auto Scaling Group Health Check CLOG40CDO8,pillar_3_q08,pillar_3_q08choice2
 Reliability,REL 9 How do you back up data?,P0 Perform data backup automatically,Amazon RDS Backups opQPADkZvH,pillar_3_q10,pillar_3_q10choice3
-Reliability,REL 9 How do you back up data?,P0 Perform data backup automatically,Amazon S3 Bucket Versioning R365s2Qddf,pillar_3_q10,pillar_3_q10choice3
 Reliability,REL 9 How do you back up data?,P0 Perform data backup automatically,Amazon EBS Snapshots H7IgTzjT,pillar_3_q10,pillar_3_q10choice3
+Reliability,REL 9 How do you back up data?,P0 Perform data backup automatically,= Suggested but not mandatory,pillar_3_q10,pillar_3_q10choice3
+Reliability,REL 9 How do you back up data?,P0 Perform data backup automatically,Amazon S3 Bucket Versioning R365s2Qddf,pillar_3_q10,pillar_3_q10choice3
 Reliability,REL 9 How do you back up data?,P1 Perform periodic recovery of the data to verify backup integrity and processes,Amazon RDS Backups,pillar_3_q10,pillar_3_q10choice4
 Reliability,REL 10 How do you use fault isolation to protect your workload?,P1 Deploy the workload to multiple locations,ELB Cross-Zone Load Balancing xdeXZKIUy,pillar_3_q11,pillar_3_q11choice1
 Reliability,REL 10 How do you use fault isolation to protect your workload?,P1 Deploy the workload to multiple locations,Amazon EC2 Availability Zone Balance wuy7G1zxql,pillar_3_q11,pillar_3_q11choice1
