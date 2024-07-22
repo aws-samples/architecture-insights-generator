@@ -23,6 +23,27 @@ The "Usage 1: Generate TA check report" needs to be completed first.
 
 Before using this feature, you need to set up [Configuration and Credential File Settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
 
+### IAM policy suggestion
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "wellarchitected:ListWorkloads",
+                "wellarchitected:GetAnswer",
+                "wellarchitected:UpdateAnswer",
+                "wellarchitected:ListLenses"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+```
+
 After setting up your [Configuration and Credential File Settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html), you can click on the "Setting" option in this application to configure the Region, Workload, and Lens. Once you have successfully imported the exported XLSX files from the AWS Trusted Adviser service, you can perform the "Update Workload" operation.
 
 **The logic for updating WA notes**: It aims to preserve as much historical log in the notes as possible, with the most recent updates placed at the top. Due to the 2048 character limit, only the latest 2000 characters of the log will be retained.
