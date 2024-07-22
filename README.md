@@ -37,7 +37,7 @@ Before using this feature, you need to set up [Configuration and Credential File
                 "wellarchitected:UpdateAnswer",
                 "wellarchitected:ListLenses"
             ],
-            "Resource": "*"
+            "Resource": "<YOUR RESOURCE ARN>"
         }
     ]
 }
